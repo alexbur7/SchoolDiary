@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:gravity="center|top"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/cab_edit_text"
+            android:layout_width="match_parent"
+            android:hint="@string/cab"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:autofillHints="@string/cab" />
+
+        <Spinner
+            android:id="@+id/subject_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        
+        <TimePicker
+            android:id="@+id/time_picker"
+            android:amPmTextColor="@color/purple_700"
+            android:numbersSelectorColor="@color/purple_700"
+            android:amPmBackgroundColor="@color/purple_500"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save_btn_text"/>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="diary_page_title">Раписание</string>
+    <string name="about_company_page_title">О разработчике</string>
+    <string name="cab_number_edit_text">Номер кабинета</string>
+    <string name="save_btn_text">Сохранить</string>
+</resources>

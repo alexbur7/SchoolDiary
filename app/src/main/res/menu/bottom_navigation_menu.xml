@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/page_diary"
+        android:enabled="true"
+        android:icon="@drawable/diary_page"
+        android:title="@string/diary_page_title"/>
+    <item
+        android:id="@+id/page_subjects"
+        android:enabled="true"
+        android:icon="@drawable/subjects_page"
+        android:title="@string/subjects_page_title"/>
+
+    <item
+        android:id="@+id/page_about_company"
+        android:enabled="true"
+        android:icon="@drawable/about_company_page"
+        android:title="@string/about_company_page_title"/>
+</menu>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.schooldiary.viewmodel.DiaryViewModel" />
+
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/margin_start_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/text_margin"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/margin_end_guide"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="@dimen/text_margin"/>
+
+        <TextView
+            android:id="@+id/text_name_subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{viewModel.textNote}"
+            android:textColor="@color/black"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constrainedWidth="true"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+            app:layout_constraintStart_toStartOf="@+id/margin_start_guide"
+            app:layout_constraintEnd_toEndOf="@+id/margin_end_guide"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/margin_top"/>
+
+        <TextView
+            android:id="@+id/text_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            android:text="@{viewModel.date}"
+            android:layout_marginTop="@dimen/margin_top_between_text"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintStart_toStartOf="@id/margin_start_guide"
+            app:layout_constraintTop_toBottomOf="@+id/text_name_subject"
+            app:layout_constraintEnd_toEndOf="@id/margin_end_guide"/>
+
+        <EditText
+            android:id="@+id/notes_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_edit_text"
+            app:layout_constraintStart_toStartOf="@id/margin_start_guide"
+            app:layout_constraintEnd_toEndOf="@id/margin_end_guide"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constrainedWidth="true"
+            android:text="@{viewModel.note}"
+            android:hint="@{viewModel.hintEditText}"
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/margin_top"
+            app:layout_constraintTop_toBottomOf="@id/text_date"/>
+
+        <Button
+            android:id="@+id/save_notes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save_notes"
+            app:layout_constraintStart_toStartOf="@id/margin_start_guide"
+            app:layout_constraintEnd_toEndOf="@id/margin_end_guide"
+            app:layout_constraintTop_toBottomOf="@id/notes_edit_text"
+            android:layout_marginTop="@dimen/margin_top"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

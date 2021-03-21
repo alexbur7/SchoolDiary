@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_table_dimenison">12dp</dimen>
+    <dimen name="diary_title_size">20sp</dimen>
+    <dimen name="text_margin">8dp</dimen>
+    <dimen name="margin_top">16dp</dimen>
+    <dimen name="size_keyboard_right">25dp</dimen>
+    <dimen name="margin_right">4dp</dimen>
+    <dimen name="height_view">1dp</dimen>
+    <dimen name="margin_top_between_text">2dp</dimen>
+    <dimen name="height_edit_text">100dp</dimen>
+    <dimen name="guideline_in_item_table">100dp</dimen>
+    <dimen name="guideline_in_item_table_cab">85dp</dimen>
+    <dimen name="height_recycler_with_marks">100dp</dimen>
+</resources>
